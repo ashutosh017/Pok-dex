@@ -234,7 +234,7 @@ export default function PokemonList({ allPokemonData }: PokemonListProps) {
             <SelectValue placeholder="Filter by type" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Types</SelectItem>
+            <SelectItem className="backdrop-blur-lg" value="all">All Types</SelectItem>
             {allTypes.map((type) => (
               <SelectItem className="backdrop-blur-lg" key={type} value={type}>
                 <span className="capitalize">{type}</span>
